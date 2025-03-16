@@ -13,7 +13,7 @@ function App() {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/contests")
+    axios.get("https://contest-tracker-8978.onrender.com/api/contests")
       .then((response) => {
         console.log("Contests fetched:", response.data);
         setContests(response.data.groupedContests);
